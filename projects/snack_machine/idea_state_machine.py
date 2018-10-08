@@ -1,17 +1,29 @@
-
-
 class SuperState:
-    def __init__(name, states):
+    def __init__(self, name, states):
         self.s = states
         self.n = name
 
-    def add_state(state)
+    def add_state(self, state):
         self.s.append(state)
 
-    def get_name():
-        return self.s.n
+    def get_name(self):
+        return self.n
 
-class state()
-    def __init__(id, transition)
+    def get_states(self):
+        return self.s
+
+class State:
+    def __init__(self, id):
         self.i = id
-        self.t = transition
+
+    def get_name(self):
+        return self.i
+
+state_a = State("idle")
+state_b = State("insert")
+state_c = State("select")
+
+vending_machine = SuperState("Vending Machine", [state_a, state_b, state_c])
+
+for state in vending_machine.get_states():
+    print(state.get_name())

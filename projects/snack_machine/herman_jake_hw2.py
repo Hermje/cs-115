@@ -13,6 +13,7 @@ snack_choice = 0
 change = 0
 
 def main():
+    global state
     if state == "A":
         command = input("input 'start' to begin: ")
         if command == "start":
