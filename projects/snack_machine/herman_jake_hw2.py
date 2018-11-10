@@ -11,7 +11,7 @@ snack_1 = 2
 snack_2 = 4
 snack_3 = 1
 #stores input to manage loop
-command = str(raw_input("enter 'start' to begin: "))
+command = str(input("enter 'start' to begin: "))
 snack_choice = 0
 
 while command != "exit":
